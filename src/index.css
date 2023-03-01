@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media screen and (max-width: 992px) {
+  @-o-viewport{width: max-content;}
+  @-ms-viewport{width: max-content;}
+}
+
+body::-webkit-scrollbar{
+  width: 8px;
+ 
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgb(5, 6, 49);
+ 
+ 
+}

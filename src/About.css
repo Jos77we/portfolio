@@ -1,0 +1,61 @@
+.about-body {
+    height: 600px;
+    width: 120%;
+    background-color: rgba(14, 7, 78, 0.404);
+    margin-top: 60px;
+    display: flex;
+    border-radius: 16px;
+}
+
+.about {
+    flex: 3.0;
+    font-family: Work Sans;
+    max-width: 400px;
+}
+
+.line {
+    flex: 1.0;
+
+
+}
+
+.boundary {
+    height: 500px;
+    width: 4px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+.contact {
+    flex: 3.0;
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.word {
+    margin-left: 20px;
+}
+
+.sticks {
+    height: 20px;
+    width: 5px;
+    background-color: black;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.sticks-1 {
+    height: 20px;
+    width: 5px;
+    background-color: white;
+    border-radius: 4px;
+    margin-left: 5px;
+}

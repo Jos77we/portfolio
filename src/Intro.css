@@ -1,0 +1,44 @@
+.intro-body {
+    height: 2500px;
+    background: linear-gradient(180deg, rgb(25, 34, 61), rgb(1, 129, 108) 100%);
+
+}
+
+.intro-sub {
+    object-fit: cover;
+    display: flex;
+}
+
+.intro {
+    flex: 3.0;
+    padding: 40px 80px;
+
+}
+
+.name {
+    flex: 2.0;
+    padding: 100px 20px;
+    font-family: Rubik Spray Paint;
+    color: white;
+    font-size: 1.5rem;
+
+
+
+}
+
+.box {
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    text-align: right;
+    background-image: url(./images/black\ and\ white.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.last {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
