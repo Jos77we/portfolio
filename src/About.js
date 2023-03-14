@@ -25,7 +25,7 @@ const About = () => {
           style={{
             fontSize: "2.0rem",
             marginLeft: "20px",
-            color: "rgb(223, 13, 13)",
+            color: "black",
           }}
         >
           About me
@@ -34,7 +34,8 @@ const About = () => {
           style={{
             fontSize: "1.4rem",
             marginLeft: "10px",
-            color: "rgb(211, 16, 2)",
+            color: "black",
+            fontWeight: 700
           }}
         >
           Education
@@ -51,7 +52,7 @@ const About = () => {
           style={{
             fontSize: "2.0rem",
             marginLeft: "20px",
-            color: "rgb(223, 13, 13)",
+            color: "black",
           }}
         >
           Skills
@@ -120,7 +121,7 @@ const About = () => {
           style={{
             fontSize: "2.0rem",
             marginLeft: "10px",
-            color: "rgb(223, 13, 13)",
+            color: "black",
             marginTop: "180px",
           }}
         >

@@ -1,85 +1,179 @@
 import React from "react";
 import "./Section.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import pic1 from "./images/sign in.png";
+import pic2 from "./images/layer1b.png";
+import pic3 from "./images/weather.png";
+import pic4 from "./images/webcapture.jpeg";
+import pic5 from "./images/tourism.jpeg";
+import pic6 from "./images/Desktop.png";
+
+import "./styles.css";
+import { Autoplay, Pagination } from "swiper";
 
 const Section = () => {
   return (
     <div className="section">
-      <div className="section-1">
-        <div className="section-box">
+      <div className="project-mobile">
+        <div className="project-mobilebox">
           <p
             style={{
+              fontSize: "1.8rem",
               maxWidth: "200px",
-              marginLeft: "30px",
-              marginTop: "40px",
-              color: "white",
-              fontSize: "1.5rem",
+              marginInlineStart: "10px",
+              fontWeight: "600",
             }}
           >
-            Desktop Designs & Prototyping
+            Mobile Development
           </p>
-        </div>
-        <div className="section-box">
           <p
             style={{
-              maxWidth: "200px",
-              marginLeft: "30px",
-              marginTop: "60px",
+              maxWidth: "300px",
+              marginInlineStart: "20px",
               color: "white",
-              fontSize: "1.5rem",
             }}
           >
-            Mobile App Designs & Prototyping
+            With React Native which is a frame work that allows one to code in
+            Javascript and use libraries we can have Android , Ios and web apps
+            that is of one code base and can be used in different environments.
+            I have interacted with React native both in Android studio and while
+            using expo and created the following apps
           </p>
         </div>
-        <div className="section-box">
-          <p
-            style={{
-              maxWidth: "200px",
-              marginLeft: "30px",
-              marginTop: "60px",
-              color: "white",
-              fontSize: "1.5rem",
-            }}
-          >
-            Web Designs & Development
-          </p>
-        </div>
+        {/* <div className="project-mobilebox1"> */}
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <p>Dashboard screens</p>
+            <img src={pic2} alt="slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <p>Signin screens</p>
+            <img src={pic1} alt="slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <p>Weather app</p>
+            <img src={pic3} alt="slide" />
+          </SwiperSlide>
+        </Swiper>
+        {/* </div> */}
       </div>
-      <div className="section-2">
-        <div className="section-box2">
-          <div>
-            <p style={{ maxWidth: "500px", color: "white", marginTop: "40px" }}>
-              In this project i did a design of a prototype statistic display on
-              a desktop. The project included API endpoints which do help
-              provide the statistics that we are to display.
-            </p>
-            <p>*Note is a prototype project </p>
-          </div>
-          <div className="image1"></div>
+      <div className="project-mobile">
+        <div className="project-mobilebox">
+          <p
+            style={{
+              fontSize: "1.8rem",
+              maxWidth: "200px",
+              marginInlineStart: "10px",
+              fontWeight: "600",
+            }}
+          >
+            Web Development
+          </p>
+          <p
+            style={{
+              maxWidth: "300px",
+              marginInlineStart: "20px",
+              color: "white",
+            }}
+          >
+            Web pages and websites are a way for customers to reach service
+            providers. Reactjs is a framework that makes rendering fast,
+            efficient and well designed. React also gives a lot of flexibility
+            when it comes to using components and css to style webpages. With
+            Express, Axios and cloudbases we can have full stack websites just
+            like these
+          </p>
         </div>
-        <div className="section-box2">
-          <div>
-            <p style={{ maxWidth: "500px", color: "white", marginTop: "40px" }}>
-              Weather App. This app tells you the weather updates according to
-              your current location. The design was done on Figma. The front-end
-              development by React Native in expo and the backend involved a
-              combination of axios, API from metromatics and express. Its purely
-              written in JavaScript with styling by tailwindcss.
-            </p>
-          </div>
-          <div className="image2"></div>
+        {/* <div className="project-mobilebox1"></div> */}
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <p>Oncargo company website</p>
+            <img src={pic4} alt="slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <p>Fast Forward website</p>
+            <img src={pic5} alt="slide" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div className="project-mobile">
+        <div className="project-mobilebox">
+          <p
+            style={{
+              fontSize: "1.8rem",
+              maxWidth: "200px",
+              marginInlineStart: "10px",
+              fontWeight: "600",
+            }}
+          >
+            UI/UX Development
+          </p>
+          <p
+            style={{
+              maxWidth: "300px",
+              marginInlineStart: "20px",
+              color: "white",
+            }}
+          >
+            In any development cycle prototyping and Design stand as the top
+            most processes to see how an idea will actually look like. With
+            Figma and Adobe we can have flexibility in playing around with
+            designs to eventually have a final product. This are the designs i
+            have comeup with and turned into code and finally into working
+            projects
+          </p>
         </div>
-
-        <div className="section-box2">
-          <div>
-            <p style={{ maxWidth: "500px", color: "white", marginTop: "40px" }}>
-              This is an example of a webpage done for Oncargo company. It
-              involved the frontend and backend development with JavaScript,
-              CSS, Axios, Express, React Js and MongoDB.
-            </p>
-          </div>
-          <div className="image3"></div>
-        </div>
+        {/* <div className="project-mobilebox1"></div> */}
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={pic2} alt="slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={pic3} alt="slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={pic6} alt="slide" />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

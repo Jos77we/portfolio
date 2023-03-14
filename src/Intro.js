@@ -24,7 +24,7 @@ const Into = () => {
           <p style={{ fontSize: "2.5rem", color: "white" }}>
             a FullStack Developer
           </p>
-          <p style={{ fontSize: "0.9rem", maxWidth: "400px", color: "grey" }}>
+          <p style={{ fontSize: "0.9rem", maxWidth: "400px", color: "white" }}>
             Hi again, I am Joseph Muigai and if you have found yourself here is
             because you may be looking for a FullStack developer, a Mobile
             developer or a UI/UX Designer. You can relax as I am all of those

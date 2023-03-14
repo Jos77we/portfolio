@@ -7,7 +7,7 @@ const Topbar = () => {
   return (
     <div className='topbar'>
         <div className='logo'>
-            <img src={pic1} alt='logo' width='90px' height='90px'/>
+            <img src={pic1} alt='logo' width='90px' height='80px'/>
         </div>
         <div className='pages'>
           
