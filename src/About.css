@@ -1,6 +1,6 @@
 .about-body {
-    height: 600px;
-    width: 120%;
+    height: 100vh;
+    width: 70em;
     background-color: rgba(14, 7, 78, 0.404);
     margin-top: 60px;
     display: flex;
@@ -8,34 +8,33 @@
 }
 
 .about {
-    flex: 3.0;
+    flex: -5%;
     font-family: Work Sans;
-    max-width: 400px;
+    max-width: 40vw;
 }
 
 .line {
-    flex: 1.0;
-
+    flex: -5%;
 
 }
 
 .boundary {
-    height: 500px;
-    width: 4px;
+    height: 80vh;
+    width: 0.5vw;
     background-color: white;
     margin-top: 40px;
     border-radius: 4px;
 }
 
 .contact {
-    flex: 3.0;
+    flex: 4%;
 
 }
 
 .icons {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 2vw;
     color: white;
     font-size: 14px;
 }
@@ -58,4 +57,16 @@
     background-color: white;
     border-radius: 4px;
     margin-left: 5px;
+}
+
+@media (max-width: 500px){
+    .about-body{
+        width: calc(120% - 60vw);
+        
+        
+    }
+    .icons{
+        margin-left: 1vw;
+    }
+   
 }

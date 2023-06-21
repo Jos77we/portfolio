@@ -6,7 +6,6 @@
     align-items: center;
     color: aqua;
 
-
 }
 
 .logo {
@@ -18,4 +17,11 @@
     flex: 1.0;
     display: flex;
 
+}
+
+@media (max-width: 500px){
+   .pages{
+    margin-right: 5%;
+    font-size: 0.8rem;
+   }
 }

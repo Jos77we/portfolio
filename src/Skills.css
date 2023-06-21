@@ -1,6 +1,6 @@
 .skills-body {
-    height: 1000px;
-    width: 120%;
+    height: 150vh;
+    width: 70em;
     background-color: rgba(14, 7, 78, 0.404);
     display: grid;
     align-items: center;
@@ -8,8 +8,8 @@
     justify-content: center;
     grid-template-columns: repeat(3, [col] auto);
     grid-template-rows: repeat(2, [row] 350px);
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 3vw;
+    column-gap: 2vw;
     border-radius: 10px;
 }
 
@@ -20,8 +20,8 @@
 .skills-box4,
 .skills-box5,
 .skills-box6 {
-    height: 350px;
-    width: 200px;
+    height: 100%;
+    width: 16vw;
     border: 1px solid black;
     background-color: rgb(17, 11, 75);
     border-radius: 8px;
@@ -69,4 +69,30 @@
     grid-row: row 2;
     grid-column: col 3;
 
+}
+
+@media(max-width:500px){
+    .skills-body{
+        height: 100%;
+        width: calc(120% - 60vw);
+        display: block;
+        
+       
+        
+    }
+    .skills-box1,
+    .skills-box2,
+    .skills-box3,
+    .skills-box4,
+    .skills-box5,
+    .skills-box6{
+        font-size: 0.5rem;
+        height: 40vh;
+        width: 45vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        
+          
+    }
 }

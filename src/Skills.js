@@ -40,9 +40,10 @@ const Skills = () => {
             padding: "40px 0px 0px 10px",
             fontSize: "30px",
             color: "rgb(223, 13, 13)",
+            
           }}
         />
-        <p style={{ color: "white", fontSize: "1.2rem", marginLeft: "10px" }}>
+        <p style={{ color: "white", fontSize: "1.2rem", marginLeft: "10px", maxWidth: "100px" }}>
           Front-End Development
         </p>
         <p style={{ color: "white", fontSize: "0.7rem", padding: "40px 10px" }}>
@@ -60,7 +61,7 @@ const Skills = () => {
             color: "rgb(223, 13, 13)",
           }}
         />
-        <p style={{ color: "white", fontSize: "1.2rem", marginLeft: "10px" }}>
+        <p style={{ color: "white", fontSize: "1.2rem", marginLeft: "10px", maxWidth: "100px" }}>
           Back-End Development
         </p>
         <p style={{ color: "white", fontSize: "0.7rem", padding: "40px 10px" }}>

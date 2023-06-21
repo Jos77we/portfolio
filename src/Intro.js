@@ -20,8 +20,10 @@ const Into = () => {
       <Topbar />
       <div className="intro-sub">
         <div className="intro">
-          <p style={{ fontSize: "2.5rem", color: "white" }}>Hello I'm</p>
-          <p style={{ fontSize: "2.5rem", color: "white" }}>
+          <p style={{ fontSize: "calc(0.9rem + 1.5vw)", color: "white" }}>
+            Hello I'm
+          </p>
+          <p style={{ fontSize: "calc(0.9rem + 1.5vw)", color: "white" }}>
             a FullStack Developer
           </p>
           <p style={{ fontSize: "0.9rem", maxWidth: "400px", color: "white" }}>
@@ -37,6 +39,7 @@ const Into = () => {
           </div>
         </div>
       </div>
+      
       <div className="last">
         <p
           style={{
@@ -50,6 +53,7 @@ const Into = () => {
         <Skills />
         <About />
       </div>
+     
     </div>
   );
 };
