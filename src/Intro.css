@@ -1,72 +1,95 @@
 .intro-body {
-    height: 400%;
-    background: linear-gradient(120deg, rgb(127, 127, 129),  rgb(99, 130, 145), rgb(45, 89, 102) 100%);
-    width: 100%;
-
+  height: 400%;
+  background: linear-gradient(
+    120deg,
+    rgb(127, 127, 129),
+    rgb(99, 130, 145),
+    rgb(45, 89, 102) 100%
+  );
+  width: 100%;
 }
 
 .intro-sub {
-    object-fit: cover;
-    display: flex;
-   }
-
-.intro {
-    flex: 15%;
-    padding: 10vh 8vw;
-
+  object-fit: cover;
+  display: flex;
+  grid-template-columns: auto auto;
+  column-gap: 20%;
 }
 
-.name {
-    flex: 2%;
-    padding: 10vh 2vw;
-    font-family: Rubik Spray Paint;
-    color: white;
-    font-size: 1.5rem;
-
+.intro {
+  padding: 10vh 8vw;
 }
 
 .box {
-    height: 65vh;
-    width: 25vw;
-    border: 1px solid black;
-    text-align: right;
-    background-image: url(./images/black\ and\ white.jpg);
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+  height: 65vh;
+  width: 25vw;
+  margin-top: 10vh;
+  text-align: right;
+  background-image: url(./images/black\ and\ white.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  font-family: Rubik Spray Paint;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  border: 6px solid transparent;
+  background: linear-gradient(
+      60deg,
+      rgb(2, 196, 122),
+      rgb(1, 110, 87),
+      rgb(236, 3, 3)
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#ffffff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .last {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
+@media (max-width: 500px) {
+  .intro-body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro-sub {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-@media (max-width: 500px){
-    .intro-body{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    .intro-sub{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .name{
-        padding: 5vh 1vw;
-    }
-    .box{
-        width: 150%;
-        height: 120%;  
-        
-    }
-    .last{
-        font-size: 1.0rem;
-        margin-left: 35%;
-        margin-right: auto;
-    }
+  .name {
+    padding: 3vh 0.5vw;
+    margin-right: 20%;
+  }
+  .box {
+    width: 70%;
+    height: 120%;
+    margin-top: 0.5vh;
+    top: 0;
+  }
+  .last {
+    margin-top: 4vh;
+    font-size: 1rem;
+    margin-right: 10%;
+    margin-left: auto;
+  }
 }

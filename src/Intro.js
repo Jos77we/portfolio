@@ -33,13 +33,12 @@ const Into = () => {
             expertise put together. Welcome to my Portfolio.
           </p>
         </div>
-        <div className="name">
-          <div className="box">
-            <p style={{ marginTop: "340px" }}>Joseph Muigai</p>
-          </div>
+
+        <div className="box">
+          <p style={{ marginTop: "340px" }}>Joseph Muigai</p>
         </div>
       </div>
-      
+
       <div className="last">
         <p
           style={{
@@ -53,7 +52,6 @@ const Into = () => {
         <Skills />
         <About />
       </div>
-     
     </div>
   );
 };

@@ -20,127 +20,110 @@ const About = () => {
 
   return (
     <div className="about-body">
+      <p
+        style={{
+          fontSize: "2.0rem",
+          marginLeft: "20px",
+          color: "black",
+        }}
+      >
+        About me
+      </p>
       <div className="about">
-        <p
-          style={{
-            fontSize: "2.0rem",
-            marginLeft: "20px",
-            color: "black",
-          }}
-        >
-          About me
-        </p>
-        <p
-          style={{
-            fontSize: "1.4rem",
-            marginLeft: "10px",
-            color: "black",
-            fontWeight: 700
-          }}
-        >
-          Education
-        </p>
-        <p style={{ fontSize: "0.8rem", marginLeft: "10px", color: "white" }}>
-          I have a bachelors degree in Computer Systems Engineering which i have
-          attained from Kirinyage university in Nairobi, Kenya.
-        </p>
-        <p style={{ fontSize: "0.8rem", marginLeft: "10px", color: "white" }}>
-          {" "}
-          I do also have certificates from Coursea and freeCodeCamp
-        </p>
-        <p
-          style={{
-            fontSize: "2.0rem",
-            marginLeft: "20px",
-            color: "black",
-          }}
-        >
-          Skills
-        </p>
-        <div className="icons">
-          <FaFigma />
-          <p className="word">Figma</p>
-          <div style={{ marginLeft: "60px", display: "flex" }}>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks-1"></div>
+        <div className="about-box">
+          <div style={{ padding: "8px 20px" }}>
+            <p
+              style={{
+                fontSize: "1.4rem",
+                marginLeft: "10px",
+                color: "rgb(223, 13, 13)",
+                fontWeight: 700,
+              }}
+            >
+              Education
+            </p>
+            <p
+              style={{
+                fontSize: "0.8rem",
+                marginLeft: "10px",
+                color: "white",
+                maxWidth: "700",
+              }}
+            >
+              I have a bachelors degree in Computer Systems Engineering which i
+              have attained from Kirinyage university in Nairobi, Kenya.
+            </p>
+            <p
+              style={{ fontSize: "0.8rem", marginLeft: "10px", color: "white" }}
+            >
+              {" "}
+              I do also have certificates from Coursea and freeCodeCamp
+            </p>
           </div>
         </div>
-        <div className="icons">
-          <SiJavascript />
-          <p className="word">JavaScript</p>
-          <div style={{ marginLeft: "60px", display: "flex" }}>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks-1"></div>
-            <div className="sticks-1"></div>
-          </div>
-        </div>
-        <div className="icons">
-          <FaJava />
-          <p className="word">Java</p>
-          <div style={{ marginLeft: "60px", display: "flex" }}>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks-1"></div>
-            <div className="sticks-1"></div>
-            <div className="sticks-1"></div>
-          </div>
-        </div>
-        <div className="icons">
-          <ImHtmlFive2 />
-          <p className="word">HTML</p>
-          <div style={{ marginLeft: "60px", display: "flex" }}>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks-1"></div>
-          </div>
-        </div>
-        <div className="icons">
-          <DiCss3 />
-          <p className="word">CSS</p>
-          <div style={{ marginLeft: "60px", display: "flex" }}>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks"></div>
-            <div className="sticks-1"></div>
-          </div>
-        </div>
-      </div>
-      <div className="line">
-        <div className="boundary"></div>
-      </div>
-      <div className="contact">
-        <p
-          style={{
-            fontSize: "2.0rem",
-            marginLeft: "10px",
-            color: "black",
-            marginTop: "180px",
-          }}
-        >
-          Contact me
-        </p>
 
-        <div className="icons">
-          <SiGmail style={{ fontSize: "24px" }} />
-          <p style={{ marginLeft: "20px" }}>josemaina207@gmail.com</p>
-        </div>
-        <div className="icons">
-          <BsSkype style={{ fontSize: "24px" }} />
-          <p style={{ marginLeft: "20px" }}>
-            https://join.skype.com/invite/JjMdEkCtRS7u
+        <div className="about-box2" style={{ padding: "8px 20px" }}>
+          <p
+            style={{
+              fontSize: "1.4rem",
+              marginLeft: "10px",
+              color: "rgb(223, 13, 13)",
+              fontWeight: 700,
+            }}
+          >
+            Contact me
           </p>
+          <div className="icons">
+            <SiGmail style={{ fontSize: "1.2rem" }} />
+            <p style={{ marginLeft: "20px" }}>josemaina207@gmail.com</p>
+          </div>
+          <div className="icons">
+            <BsSkype style={{ fontSize: "1.2rem" }} />
+            <p className="box2-word">joseph Maina</p>
+          </div>
+          <div className="icons">
+            <BsGithub style={{ fontSize: "1.2rem" }} />
+            <p style={{ marginLeft: "20px" }}>Jos77we</p>
+          </div>
         </div>
-        <div className="icons">
-          <BsGithub style={{ fontSize: "24px" }} />
-          <p style={{ marginLeft: "20px" }}>Jos77we</p>
+
+        <div className="about-box1" style={{ padding: "10px 20px" }}>
+          <p
+            style={{
+              fontSize: "1.4rem",
+              marginLeft: "20px",
+              color: "rgb(223, 13, 13)",
+              fontWeight: 700,
+            }}
+          >
+            Skills
+          </p>
+          <div className="box-layout">
+            <div>
+              <div className="icons">
+                <FaFigma />
+                <p className="word">Figma</p>
+              </div>
+              <div className="icons">
+                <SiJavascript />
+                <p className="word">JavaScript</p>
+              </div>
+              <div className="icons">
+                <FaJava />
+                <p className="word">Java</p>
+              </div>
+            </div>
+            <div>
+              <div className="icons">
+                <ImHtmlFive2 />
+                <p className="word">HTML</p>
+              </div>
+              <div className="icons">
+                <DiCss3 />
+                <p className="word">CSS</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
