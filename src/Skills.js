@@ -135,9 +135,9 @@ const Skills = () => {
             maxWidth: "50px",
           }}
         >
-          Database Rendering{" "}
+          Database Rendering
         </p>
-        <p style={{ color: "white", fontSize: "0.7rem", padding: "40px 10px" }}>
+        <p className="style-word">
           Relational databases and non relational database play a huge roll when
           it comes to storing clients data, backups and even analytics. I do
           have skills in MySql and MongoDB when it comes to data entry, query
