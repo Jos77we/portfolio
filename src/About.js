@@ -42,20 +42,11 @@ const About = () => {
             >
               Education
             </p>
-            <p
-              style={{
-                fontSize: "0.8rem",
-                marginLeft: "10px",
-                color: "white",
-                maxWidth: "700",
-              }}
-            >
+            <p className="style-text">
               I have a bachelors degree in Computer Systems Engineering which i
               have attained from Kirinyage university in Nairobi, Kenya.
             </p>
-            <p
-              style={{ fontSize: "0.8rem", marginLeft: "10px", color: "white" }}
-            >
+            <p className="style-text">
               {" "}
               I do also have certificates from Coursea and freeCodeCamp
             </p>

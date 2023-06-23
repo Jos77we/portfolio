@@ -84,10 +84,17 @@
   margin-left: 20px;
 }
 
+.style-text{
+  font-size: 0.8rem;
+  margin-left: 5%;
+  color: #fff;
+  max-width: 700;
+}
+
 @media (max-width: 500px) {
   .about-body {
     width: 120%;
-    height: 90vh;
+    height: 95vh;
   }
 
   .about {
@@ -114,5 +121,10 @@
 
   .icons {
     font-size: 0.6rem;
+  }
+
+  .style-text{
+    font-size: 0.5rem;
+    margin-left: 3%;
   }
 }
